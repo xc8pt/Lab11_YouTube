@@ -145,3 +145,32 @@ button:hover {
     padding: 24px;
 }
 
+.chips {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+.chip {
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+    width: auto;
+    min-width: 60px;
+    text-align: center;
+}
+.chip:hover {
+    background-color: #e5e5e5;
+}
+.chip.active {
+    background-color: #030303;
+    color: white;
+}
