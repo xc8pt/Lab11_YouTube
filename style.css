@@ -104,3 +104,44 @@ button:hover {
     margin: 0 40px;
     gap: 0;
 }
+
+.content {
+    display: flex;
+}
+.sidebar {
+    width: 240px;
+    background-color: white;
+    padding: 12px 0;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 24px;
+    color: #030303;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.sidebar-link:hover {
+    background-color: #f2f2f2;
+}
+.sidebar-link.active {
+    background-color: #e5e5e5;
+    font-weight: 500;
+}
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 12px 0;
+}
+.main {
+    flex: 1;
+    padding: 24px;
+}
+
